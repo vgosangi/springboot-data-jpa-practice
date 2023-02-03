@@ -1,8 +1,6 @@
 package com.AshvFinanceInternPractice.springbootdatajpapractice.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,11 +11,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Student {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long studentId;
     private String firstName;
     private String lastName;
-    private String emailId;
-    private String gaurdianName;
-    private String gauardianEmail;
-    private String getGaurdianMobile;
+    private Long departmentId;
 }
