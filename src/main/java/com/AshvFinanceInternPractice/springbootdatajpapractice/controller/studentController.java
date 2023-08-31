@@ -46,8 +46,6 @@ public class studentController {
 
         return studentService.saveStudentByID(studentId,student);
     }
-    //hghjlhunhiokplkjkj kjlkjljlgit
-    //from branch2 check conflicts
-       //changes
+
 
 }
